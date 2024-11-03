@@ -12,9 +12,9 @@ const Navbar = () => {
                 {/* nav menu part */}
                 <div>
                     <ul className="flex gap-2">
-                        <Link className="px-5 py-2 font-medium text-gray-600">Home</Link>
-                        <Link className="px-5 py-2 font-medium text-gray-600">Statistics</Link>
-                        <Link className="px-5 py-2 font-medium text-gray-600">Dashboard</Link>
+                        <Link to="/" className="px-5 py-2 font-medium text-gray-600">Home</Link>
+                        <Link to="statistics" className="px-5 py-2 font-medium text-gray-600">Statistics</Link>
+                        <Link to="dashboard" className="px-5 py-2 font-medium text-gray-600">Dashboard</Link>
                     </ul>
                 </div>
                 {/* nav button part */}
