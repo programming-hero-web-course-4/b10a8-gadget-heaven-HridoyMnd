@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <section className="container mx-auto">
+        <section className="container mx-auto ">
             <footer>
                 {/* heading part */}
                 <div className="mb-10 text-center">
