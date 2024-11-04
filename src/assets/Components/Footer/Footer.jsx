@@ -11,7 +11,7 @@ const Footer = () => {
                 {/* horizontal rule */}
                 <hr />
                 {/* bottom part */}
-                <div className="flex justify-between mt-4">
+                <div className="flex justify-between mt-4 max-md:flex-col text-center gap-5">
                     {/* left part */}
                     <div>
                         <h3 className="font-bold text-lg mb-3">Services</h3>
