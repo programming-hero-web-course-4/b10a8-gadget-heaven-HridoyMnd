@@ -1,0 +1,60 @@
+[
+    {
+      "id": "401",
+      "name": "Galaxy S9 Ultra",
+      "category": "Samsung Tablet",
+      "price": 1099.99,
+      "rating": 4.8,
+      "img": "https://i.ibb.co.com/5r0bW3D/tab-2.jpg",
+      "description": "Samsung's high-end tablet with a stunning AMOLED display, S-Pen support, and exceptional multitasking capabilities.",
+      "specification": {
+        "displaySize": "14.6 inches",
+        "processor": "Snapdragon 8 Gen 2",
+        "RAM": "12GB",
+        "storage": "512GB",
+        "battery": "11200mAh",
+        "camera": "13MP + 6MP rear, 12MP front",
+        "OS": "Android 13"
+      },
+      "availability": true
+    },
+    {
+      "id": "402",
+      "name": "Samsung Galaxy A8",
+      "category": "Samsung Tablet",
+      "price": 329.99,
+      "rating": 4.3,
+      "img": "https://i.ibb.co.com/9Y2Sbrj/tab-4.jpg",
+      "description": "Affordable tablet with a large screen and reliable performance, ideal for everyday tasks and media consumption.",
+      "specification": {
+        "displaySize": "10.5 inches",
+        "processor": "Unisoc T618",
+        "RAM": "4GB",
+        "storage": "64GB",
+        "battery": "7040mAh",
+        "camera": "8MP rear, 5MP front",
+        "OS": "Android 11"
+      },
+      "availability": true
+    },
+    {
+      "id": "403",
+      "name": "iPad Pro 12.9",
+      "category": "Apple Tablet",
+      "price": 1299.99,
+      "rating": 4.9,
+      "img": "https://i.ibb.co.com/zf8CH19/tab-3.jpg",
+      "description": "Apple's top-tier tablet with a large Liquid Retina XDR display, powerful M2 chip, and advanced creative capabilities.",
+      "specification": {
+        "displaySize": "12.9 inches",
+        "processor": "Apple M2",
+        "RAM": "16GB",
+        "storage": "1TB",
+        "battery": "9720mAh",
+        "camera": "12MP + 10MP rear, 12MP front",
+        "OS": "iPadOS 16"
+      },
+      "availability":false
+    }
+  ]
+  

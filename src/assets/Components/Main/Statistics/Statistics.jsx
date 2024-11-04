@@ -3,8 +3,9 @@ const Statistics = ({ title }) => {
     useEffect(() => {
         document.title = title;
     }, [title])
+
     return (
-        <div>
+        <div className="container mx-auto">
             <h2>This is the Statistics Component</h2>
         </div>
     );

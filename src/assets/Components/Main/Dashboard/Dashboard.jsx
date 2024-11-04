@@ -4,8 +4,9 @@ const Dashboard = ({ title }) => {
     useEffect(() => {
         document.title = title;
     }, [title])
+
     return (
-        <div>
+        <div className="container mx-auto">
             <h2>This is the Dashboard Component</h2>
         </div>
     );

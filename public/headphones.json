@@ -1,0 +1,71 @@
+[
+    {
+      "id": "101",
+      "name": "SoundWave Pro 700",
+      "category": "Over-Ear Headphones",
+      "price": 149.99,
+      "rating": 4.5,
+      "img": "https://i.ibb.co.com/vLdRYT1/headphone-2.jpg",
+      "description": "High-quality over-ear headphones with deep bass and noise-canceling technology, perfect for audiophiles.",
+      "specification": {
+        "driverSize": "50mm",
+        "frequencyResponse": "20Hz - 20kHz",
+        "connectivity": "Bluetooth 5.0, Wired",
+        "batteryLife": "30 hours",
+        "weight": "250g"
+      },
+      "availability":true
+    },
+    {
+      "id": "102",
+      "name": "BassBoost X200",
+      "category": "In-Ear Headphones",
+      "price": 79.99,
+      "rating": 4.2,
+      "img": "https://i.ibb.co.com/TYgqKcy/headphone-3.jpg",
+      "description": "Compact in-ear headphones with powerful bass and a comfortable, ergonomic design.",
+      "specification": {
+        "driverSize": "10mm",
+        "frequencyResponse": "15Hz - 22kHz",
+        "connectivity": "Bluetooth 4.2",
+        "batteryLife": "10 hours",
+        "weight": "20g"
+      },
+      "availability": true
+    },
+    {
+      "id": "103",
+      "name": "PureAudio Studio",
+      "category": "On-Ear Headphones",
+      "price": 99.99,
+      "rating": 4.7,
+      "img": "https://i.ibb.co.com/6BBXcdc/headphone-5.jpg",
+      "description": "On-ear headphones with balanced sound quality, ideal for studio monitoring and casual listening.",
+      "specification": {
+        "driverSize": "40mm",
+        "frequencyResponse": "18Hz - 24kHz",
+        "connectivity": "Wired",
+        "cableLength": "1.5m",
+        "weight": "180g"
+      },
+      "availability": false
+    },
+    {
+      "id": "104",
+      "name": "Crystal Clear ANC",
+      "category": "Wireless Noise-Canceling Headphones",
+      "price": 199.99,
+      "rating": 4.8,
+      "img": "https://i.ibb.co.com/31q2KRm/headphone-6.jpg",
+      "description": "Premium noise-canceling wireless headphones with exceptional sound clarity and comfort.",
+      "specification": {
+        "driverSize": "45mm",
+        "frequencyResponse": "20Hz - 25kHz",
+        "connectivity": "Bluetooth 5.1, Wired",
+        "batteryLife": "40 hours (ANC off)",
+        "weight": "300g"
+      },
+      "availability": true
+    }
+  ]
+  

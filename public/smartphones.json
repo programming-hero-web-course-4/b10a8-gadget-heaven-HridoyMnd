@@ -1,0 +1,79 @@
+[
+    {
+      "id": "301",
+      "name": "Samsung s22 Ultra",
+      "category": "Samsung Smartphone",
+      "price": 1299.99,
+      "rating": 4.7,
+      "img": "https://i.ibb.co.com/cvtt2MQ/mobile-3.jpg",
+      "description": "Premium foldable Samsung smartphone with a stunning, flexible display and powerful multitasking capabilities.",
+      "specification": {
+        "displaySize": "7.6 inches (unfolded)",
+        "processor": "Exynos 2200",
+        "RAM": "12GB",
+        "storage": "256GB",
+        "battery": "4400mAh",
+        "camera": "108MP + 12MP + 10MP",
+        "OS": "Android 12"
+      },
+      "availability":true
+    },
+    {
+      "id": "302",
+      "name": "Samsung S23 Ultra",
+      "category": "Samsung Smartphone",
+      "price": 1199.99,
+      "rating": 4.8,
+      "img": "https://i.ibb.co.com/jT13kN5/mobile-5.jpg",
+      "description": "Samsung's flagship smartphone with an ultra-clear display, powerful processor, and exceptional camera features.",
+      "specification": {
+        "displaySize": "6.8 inches",
+        "processor": "Snapdragon 8 Gen 2",
+        "RAM": "12GB",
+        "storage": "512GB",
+        "battery": "5000mAh",
+        "camera": "200MP + 12MP + 10MP + 10MP",
+        "OS": "Android 13"
+      },
+      "availability": false
+    },
+    {
+      "id": "303",
+      "name": "iPhone 15 Pro",
+      "category": "iPhone",
+      "price": 999.99,
+      "rating": 4.6,
+      "img": "https://i.ibb.co.com/gW6rKr0/mobile-2.jpg",
+      "description": "Apple's latest Pro model with A17 chip, exceptional camera upgrades, and refined design.",
+      "specification": {
+        "displaySize": "6.1 inches",
+        "processor": "A17 Bionic",
+        "RAM": "8GB",
+        "storage": "256GB",
+        "battery": "3300mAh",
+        "camera": "48MP + 12MP + 12MP",
+        "OS": "iOS 17"
+      },
+      "availability": true
+    },
+    {
+      "id": "304",
+      "name": "iPhone 16 Pro Max",
+      "category": "iPhone",
+      "price": 1199.99,
+      "rating": 4.9,
+      "img": "https://i.ibb.co.com/RymZMQw/mobile-1.jpg",
+      "description": "Top-tier Apple smartphone with the largest display, advanced camera system, and superb battery life.",
+      "specification": {
+        "displaySize": "6.7 inches",
+        "processor": "A17 Bionic",
+        "RAM": "8GB",
+        "storage": "512GB",
+        "battery": "4500mAh",
+        "camera": "48MP + 12MP + 12MP + LiDAR",
+        "OS": "iOS 17"
+      },
+      "availability": false
+    }
+  ]
+  

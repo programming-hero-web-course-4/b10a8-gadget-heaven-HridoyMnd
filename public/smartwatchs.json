@@ -1,0 +1,71 @@
+[
+    {
+      "id": "201",
+      "name": "FitPro X1",
+      "category": "Fitness Smartwatch",
+      "price": 129.99,
+      "rating": 4.3,
+      "img": "https://i.ibb.co.com/8PZ5GFT/watch-3.jpg",
+      "description": "A lightweight smartwatch with advanced fitness tracking features, ideal for health enthusiasts.",
+      "specification": {
+        "displaySize": "1.4 inches",
+        "batteryLife": "7 days",
+        "connectivity": "Bluetooth 5.0",
+        "waterResistance": "50m",
+        "weight": "35g"
+      },
+      "availability": true
+    },
+    {
+      "id": "202",
+      "name": "LifeTrack Edge",
+      "category": "Lifestyle Smartwatch",
+      "price": 199.99,
+      "rating": 4.6,
+      "img": "https://i.ibb.co.com/TYfTtHd/watch-4.jpg",
+      "description": "A stylish smartwatch with essential lifestyle features, including heart rate monitoring and message notifications.",
+      "specification": {
+        "displaySize": "1.6 inches",
+        "batteryLife": "5 days",
+        "connectivity": "Bluetooth 5.1, Wi-Fi",
+        "waterResistance": "IP68",
+        "weight": "42g"
+      },
+      "availability": true
+    },
+    {
+      "id": "203",
+      "name": "GearMaster Sport",
+      "category": "Sports Smartwatch",
+      "price": 249.99,
+      "rating": 4.8,
+      "img": "https://i.ibb.co.com/z6pNNwd/watch-5.jpg",
+      "description": "Durable sports smartwatch designed for outdoor activities with GPS tracking and multi-sport modes.",
+      "specification": {
+        "displaySize": "1.7 inches",
+        "batteryLife": "10 days (GPS off)",
+        "connectivity": "Bluetooth 5.2, GPS",
+        "waterResistance": "100m",
+        "weight": "50g"
+      },
+      "availability": false
+    },
+    {
+      "id": "204",
+      "name": "ProHealth Plus",
+      "category": "Health Smartwatch",
+      "price": 279.99,
+      "rating": 4.9,
+      "img": "https://i.ibb.co.com/KmjtFDq/watch1.jpg",
+      "description": "An advanced health-focused smartwatch with ECG monitoring, SpO2 sensors, and sleep tracking.",
+      "specification": {
+        "displaySize": "1.8 inches",
+        "batteryLife": "4 days",
+        "connectivity": "Bluetooth 5.3, Wi-Fi",
+        "waterResistance": "IP67",
+        "weight": "40g"
+      },
+      "availability": true
+    }
+  ]
+  

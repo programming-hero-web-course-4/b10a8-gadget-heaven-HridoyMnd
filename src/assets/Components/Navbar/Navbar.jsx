@@ -3,14 +3,14 @@ import { LuShoppingCart } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
 const Navbar = () => {
     return (
-        <section className="container mx-auto">
+        <section className="container mx-auto py-5 max-sm:mx-10">
             <nav className="flex justify-between items-center">
                 {/* nav logo part */}
                 <div>
                     <h1 className="text-xl font-bold">Gadget Heaven</h1>
                 </div>
                 {/* nav menu part */}
-                <div>
+                <div className="max-sm:hidden">
                     <ul className="flex gap-2">
                         <Link to="/" className="px-5 py-2 font-medium text-gray-600">Home</Link>
                         <Link to="statistics" className="px-5 py-2 font-medium text-gray-600">Statistics</Link>

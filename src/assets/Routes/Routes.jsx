@@ -13,7 +13,10 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element:<Home title="Home Page"></Home>
+                element:<Home title="Home Page"></Home>,
+                loader: () => fetch('Gadget.json'),
+                // loader: () => fetch('category.json')
+                
                 // element: <PageWithDynamicTitle title="Home Page"><Home></Home></PageWithDynamicTitle>
             },
             {

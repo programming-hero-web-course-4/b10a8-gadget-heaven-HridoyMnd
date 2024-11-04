@@ -7,18 +7,16 @@ const Error = () => {
         <p className="text-gray-600 mb-6">Sorry, the page you're looking for doesn't exist or has been moved.</p>
         
         <div>
-          {/* <button
-            onClick={() => navigate(-1)}
+          <button
             className="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all mr-4"
           >
             Go Back
-          </button> */}
-          {/* <button
-            onClick={() => navigate('/')}
+          </button>
+          <button
             className="px-6 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition-all"
           >
             Go to Home
-          </button> */}
+          </button>
         </div>
       </div>
     );
