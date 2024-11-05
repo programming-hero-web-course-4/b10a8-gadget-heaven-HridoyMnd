@@ -14,7 +14,7 @@
         "batteryLife": "30 hours",
         "weight": "250g"
       },
-      "availability":true
+      "availability":"In Stock"
     },
     {
       "id": "102",
@@ -31,7 +31,7 @@
         "batteryLife": "10 hours",
         "weight": "20g"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "103",
@@ -48,7 +48,7 @@
         "cableLength": "1.5m",
         "weight": "180g"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "104",
@@ -65,7 +65,7 @@
         "batteryLife": "40 hours (ANC off)",
         "weight": "300g"
       },
-      "availability": true
+      "availability": "In Stock"
     }
   ]
   

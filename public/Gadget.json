@@ -14,7 +14,7 @@
         "batteryLife": "30 hours",
         "weight": "250g"
       },
-      "availability":true
+      "availability":"In Stock"
     },
     {
       "id": "102",
@@ -31,7 +31,7 @@
         "batteryLife": "10 hours",
         "weight": "20g"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "103",
@@ -48,7 +48,7 @@
         "cableLength": "1.5m",
         "weight": "180g"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "104",
@@ -65,7 +65,7 @@
         "batteryLife": "40 hours (ANC off)",
         "weight": "300g"
       },
-      "availability": true
+      "availability": "In Stock"
     },
 
       {
@@ -85,7 +85,7 @@
           "batteryLife": "18 hours",
           "OS": "macOS Ventura"
         },
-        "availability": false
+        "availability": "Out of Stock"
       },
       {
         "id": "503",
@@ -104,7 +104,7 @@
           "batteryLife": "15 hours",
           "OS": "Windows 11 Pro"
         },
-        "availability":true
+        "availability":"In Stock"
       },
       {
         "id": "504",
@@ -123,7 +123,7 @@
           "batteryLife": "10 hours",
           "OS": "Windows 11 Home"
         },
-        "availability": false
+        "availability": "Out of Stock"
       },
       {
         "id": "505",
@@ -142,7 +142,7 @@
           "batteryLife": "13 hours",
           "OS": "Windows 11 Home"
         },
-        "availability":true
+        "availability":"In Stock"
       },
       {
         "id": "506",
@@ -161,7 +161,7 @@
           "batteryLife": "12 hours",
           "OS": "Windows 11 Pro"
         },
-        "availability": false
+        "availability": "Out of Stock"
       },
       {
         "id": "507",
@@ -180,7 +180,7 @@
           "batteryLife": "10 hours",
           "OS": "Windows 11 Home"
         },
-        "availability":true
+        "availability":"In Stock"
       },
       {
         "id": "301",
@@ -199,7 +199,7 @@
           "camera": "108MP + 12MP + 10MP",
           "OS": "Android 12"
         },
-        "availability":true
+        "availability":"In Stock"
       },
       {
         "id": "302",
@@ -218,7 +218,7 @@
           "camera": "200MP + 12MP + 10MP + 10MP",
           "OS": "Android 13"
         },
-        "availability": false
+        "availability": "Out of Stock"
       },
       {
         "id": "303",
@@ -237,7 +237,7 @@
           "camera": "48MP + 12MP + 12MP",
           "OS": "iOS 17"
         },
-        "availability": true
+        "availability": "In Stock"
       },
       {
         "id": "304",
@@ -256,7 +256,7 @@
           "camera": "48MP + 12MP + 12MP + LiDAR",
           "OS": "iOS 17"
         },
-        "availability": false
+        "availability": "Out of Stock"
       },
       {
         "id": "201",
@@ -273,7 +273,7 @@
           "waterResistance": "50m",
           "weight": "35g"
         },
-        "availability": true
+        "availability": "In Stock"
       },
       {
         "id": "202",
@@ -290,7 +290,7 @@
           "waterResistance": "IP68",
           "weight": "42g"
         },
-        "availability": true
+        "availability": "In Stock"
       },
       {
         "id": "203",
@@ -307,7 +307,7 @@
           "waterResistance": "100m",
           "weight": "50g"
         },
-        "availability": false
+        "availability": "In Stock"
       },
       {
         "id": "204",
@@ -324,7 +324,7 @@
           "waterResistance": "IP67",
           "weight": "40g"
         },
-        "availability": true
+        "availability": "Out of Stock"
       },
       {
         "id": "401",
@@ -343,7 +343,7 @@
           "camera": "13MP + 6MP rear, 12MP front",
           "OS": "Android 13"
         },
-        "availability": true
+        "availability": "In Stock"
       },
       {
         "id": "402",
@@ -362,7 +362,7 @@
           "camera": "8MP rear, 5MP front",
           "OS": "Android 11"
         },
-        "availability": true
+        "availability": "Out of Stock"
       },
       {
         "id": "403",
@@ -381,7 +381,7 @@
           "camera": "12MP + 10MP rear, 12MP front",
           "OS": "iPadOS 16"
         },
-        "availability":false
+        "availability":"In Stock"
       }
   ]
   

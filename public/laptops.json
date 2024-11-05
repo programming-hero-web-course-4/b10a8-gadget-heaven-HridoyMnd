@@ -17,7 +17,7 @@
         "batteryLife": "18 hours",
         "OS": "macOS Ventura"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "503",
@@ -36,7 +36,7 @@
         "batteryLife": "15 hours",
         "OS": "Windows 11 Pro"
       },
-      "availability":true
+      "availability":"In Stock"
     },
     {
       "id": "504",
@@ -55,7 +55,7 @@
         "batteryLife": "10 hours",
         "OS": "Windows 11 Home"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "505",
@@ -74,7 +74,7 @@
         "batteryLife": "13 hours",
         "OS": "Windows 11 Home"
       },
-      "availability":true
+      "availability":"In Stock"
     },
     {
       "id": "506",
@@ -93,7 +93,7 @@
         "batteryLife": "12 hours",
         "OS": "Windows 11 Pro"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "507",
@@ -112,7 +112,7 @@
         "batteryLife": "10 hours",
         "OS": "Windows 11 Home"
       },
-      "availability":true
+      "availability":"In Stock"
     }
   ]
   

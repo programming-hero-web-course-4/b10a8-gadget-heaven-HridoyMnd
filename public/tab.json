@@ -16,7 +16,7 @@
         "camera": "13MP + 6MP rear, 12MP front",
         "OS": "Android 13"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "402",
@@ -35,7 +35,7 @@
         "camera": "8MP rear, 5MP front",
         "OS": "Android 11"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "403",
@@ -54,7 +54,7 @@
         "camera": "12MP + 10MP rear, 12MP front",
         "OS": "iPadOS 16"
       },
-      "availability":false
+      "availability":"Out of Stock"
     }
   ]
   

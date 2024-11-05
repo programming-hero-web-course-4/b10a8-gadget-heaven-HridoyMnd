@@ -16,7 +16,7 @@
         "camera": "108MP + 12MP + 10MP",
         "OS": "Android 12"
       },
-      "availability":true
+      "availability":"In Stock"
     },
     {
       "id": "302",
@@ -35,7 +35,7 @@
         "camera": "200MP + 12MP + 10MP + 10MP",
         "OS": "Android 13"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "303",
@@ -54,7 +54,7 @@
         "camera": "48MP + 12MP + 12MP",
         "OS": "iOS 17"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "304",
@@ -73,7 +73,7 @@
         "camera": "48MP + 12MP + 12MP + LiDAR",
         "OS": "iOS 17"
       },
-      "availability": false
+      "availability": "Out of Stock"
     }
   ]
   

@@ -14,7 +14,7 @@
         "waterResistance": "50m",
         "weight": "35g"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "202",
@@ -31,7 +31,7 @@
         "waterResistance": "IP68",
         "weight": "42g"
       },
-      "availability": true
+      "availability": "In Stock"
     },
     {
       "id": "203",
@@ -48,7 +48,7 @@
         "waterResistance": "100m",
         "weight": "50g"
       },
-      "availability": false
+      "availability": "Out of Stock"
     },
     {
       "id": "204",
@@ -65,7 +65,7 @@
         "waterResistance": "IP67",
         "weight": "40g"
       },
-      "availability": true
+      "availability": "In Stock"
     }
   ]
   
