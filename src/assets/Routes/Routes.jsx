@@ -4,7 +4,7 @@ import Error from "../Components/Error/Error";
 import Home from "../Components/Main/Home/Home";
 import Statistics from "../Components/Main/Statistics/Statistics";
 import Dashboard from "../Components/Main/Dashboard/Dashboard";
-// import PageWithDynamicTitle from "../Components/TitleChange/TitleChange";
+import Details from "../Components/Main/Home/Details/Details";
 const router = createBrowserRouter([
     {
         path: "/",
@@ -15,19 +15,18 @@ const router = createBrowserRouter([
                 path: "/",
                 element:<Home title="Home Page"></Home>,
                 loader: () => fetch('Gadget.json'),
-                // loader: () => fetch('category.json')
-                
-                // element: <PageWithDynamicTitle title="Home Page"><Home></Home></PageWithDynamicTitle>
+            },
+            {
+                path:'details',
+                element: <Details></Details>
             },
             {
                 path: "statistics",
                 element:<Statistics title="Statistics Page"></Statistics>
-                // element: <PageWithDynamicTitle title="Statistics Page"><Statistics></Statistics></PageWithDynamicTitle>
             },
             {
                 path: "dashboard",
                 element:<Dashboard title="Dashboard Page"></Dashboard>
-                // element: <PageWithDynamicTitle title="DashBoard Page"><Dashboard></Dashboard></PageWithDynamicTitle>
             }
         ]
     },

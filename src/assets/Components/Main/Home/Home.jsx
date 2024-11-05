@@ -6,14 +6,14 @@ const Home = ({ title }) => {
     useEffect(() => {
         document.title = title;
     }, [title])
-
     const Gadgets = useLoaderData();
-
-
+    const handleDetails = (data) => {
+            console.log(data);
+    }
     return (
         <>
             <Banner></Banner>
-            <GadgetCards Gadgets={Gadgets}></GadgetCards>
+            <GadgetCards Gadgets={Gadgets} handleDetails={handleDetails}></GadgetCards>
         </>
     );
 };

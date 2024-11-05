@@ -4,7 +4,7 @@ const Footer = () => {
         <section className="container mx-auto ">
             <footer>
                 {/* heading part */}
-                <div className="mb-10 text-center">
+                <div className="mb-10 text-center mt-10">
                     <h1 className="font-bold text-3xl mb-3">Gadget Heaven</h1>
                     <p className="font-semibold text-gray-600">Leading the way in cutting-edge technology and innovation.</p>
                 </div>

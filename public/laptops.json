@@ -41,7 +41,7 @@
     {
       "id": "504",
       "name": "ASUS Zephyrus G14",
-      "category": "Gaming Laptop",
+      "category": "Laptop",
       "price": 1699.99,
       "rating": 4.8,
       "img": "https://i.ibb.co.com/q7Ld3wn/laptop-4.jpg",
@@ -60,7 +60,7 @@
     {
       "id": "505",
       "name": "HP Spectre x360",
-      "category": "2-in-1 Laptop",
+      "category": "Laptop",
       "price": 1599.99,
       "rating": 4.5,
       "img": "https://i.ibb.co.com/FWdPpr5/laptop-8.jpg",

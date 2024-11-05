@@ -2,7 +2,7 @@
     {
       "id": "401",
       "name": "Galaxy S9 Ultra",
-      "category": "Samsung Tablet",
+      "category": "Tablet",
       "price": 1099.99,
       "rating": 4.8,
       "img": "https://i.ibb.co.com/5r0bW3D/tab-2.jpg",
@@ -21,7 +21,7 @@
     {
       "id": "402",
       "name": "Samsung Galaxy A8",
-      "category": "Samsung Tablet",
+      "category": "Tablet",
       "price": 329.99,
       "rating": 4.3,
       "img": "https://i.ibb.co.com/9Y2Sbrj/tab-4.jpg",
@@ -40,7 +40,7 @@
     {
       "id": "403",
       "name": "iPad Pro 12.9",
-      "category": "Apple Tablet",
+      "category": "Tablet",
       "price": 1299.99,
       "rating": 4.9,
       "img": "https://i.ibb.co.com/zf8CH19/tab-3.jpg",

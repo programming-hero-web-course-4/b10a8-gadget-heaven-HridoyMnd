@@ -2,7 +2,7 @@
     {
       "id": "201",
       "name": "FitPro X1",
-      "category": "Fitness Smartwatch",
+      "category": "Watch",
       "price": 129.99,
       "rating": 4.3,
       "img": "https://i.ibb.co.com/8PZ5GFT/watch-3.jpg",
@@ -19,7 +19,7 @@
     {
       "id": "202",
       "name": "LifeTrack Edge",
-      "category": "Lifestyle Smartwatch",
+      "category": "Watch",
       "price": 199.99,
       "rating": 4.6,
       "img": "https://i.ibb.co.com/TYfTtHd/watch-4.jpg",
@@ -36,7 +36,7 @@
     {
       "id": "203",
       "name": "GearMaster Sport",
-      "category": "Sports Smartwatch",
+      "category": "Watch",
       "price": 249.99,
       "rating": 4.8,
       "img": "https://i.ibb.co.com/z6pNNwd/watch-5.jpg",
@@ -53,7 +53,7 @@
     {
       "id": "204",
       "name": "ProHealth Plus",
-      "category": "Health Smartwatch",
+      "category": "Watch",
       "price": 279.99,
       "rating": 4.9,
       "img": "https://i.ibb.co.com/KmjtFDq/watch1.jpg",
