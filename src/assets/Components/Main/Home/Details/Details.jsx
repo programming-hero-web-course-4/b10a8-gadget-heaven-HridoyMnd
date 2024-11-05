@@ -5,6 +5,10 @@ import { LuShoppingCart } from "react-icons/lu";
 import { FaRegHeart } from "react-icons/fa";
 
 const Details = () => {
+    //handle add cart
+    const {handleAddCart} = useContext(myContext)
+    //handle wishlist 
+    const {handleWishList} = useContext(myContext)
     // Getting product details from context
     const { details } = useContext(myContext);
     const { name, price, description, availability, img, specification, rating } = details;
@@ -64,8 +68,8 @@ const Details = () => {
                             />
                         </div>
                         <div className=' mt-2 flex gap-3'>
-                            <button className='flex items-center justify-center gap-2 px-8 py-2 bg-purple-400 rounded-full text-white font-bold'><span>Add to Cart</span><LuShoppingCart className='font-bold' /></button>
-                            <button className='bg-stone-100 flex items-center justify-center h-10 w-10 border border-black rounded-full'><FaRegHeart /></button>
+                            <button onClick={() =>handleAddCart(details)} className='flex items-center justify-center gap-2 px-8 py-2 bg-purple-400 rounded-full text-white font-bold'><span>Add to Cart</span><LuShoppingCart className='font-bold' /></button>
+                            <button onClick={() => handleWishList(details)} className='bg-stone-100 flex items-center justify-center h-10 w-10 border border-black rounded-full'><FaRegHeart /></button>
                         </div>
                     </div>
                 </div>
