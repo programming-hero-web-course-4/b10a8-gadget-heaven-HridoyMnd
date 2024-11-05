@@ -11,7 +11,7 @@ const GadgetCard = ({ Gadget }) => {
     
     return (
         <div className="">
-            <div className=" border bg-slate-200 p-3 rounded-xl text-center">
+            <div className=" border bg-slate-100 p-3 rounded-xl text-center">
                 <img src={Gadget.img} alt="" className=" aspect-[6/4] rounded-xl" />
                 <h3 className="font-semibold sm:text-xl text-2xl mt-3">{Gadget.name}</h3>
                 <h4 className="font-medium text-xl mt-2"> ${Gadget.price}</h4>

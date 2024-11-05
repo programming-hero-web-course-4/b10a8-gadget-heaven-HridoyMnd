@@ -10,9 +10,9 @@ const GadgetCards = ({ Gadgets }) => {
         ? Gadgets.filter(gadget => gadget.category === selectedCategory)
         : Gadgets.slice(0, 8);;
     return (
-        <div className="grid grid-cols-12 container mx-auto gap-5">
+        <div className="container mx-auto gap-4 grid grid-cols-12">
             <Sidebar onCategorySelect={setSelectedCategory} />
-            <div className="col-span-10 grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-5">
+            <div className=" col-span-10 grid grid-cols-3 max-sm:grid-cols-1 max-sm:col-span-7 max-lg:grid-cols-2 max-lg:col-span-9 gap-5">
                 {filteredGadgets.map((Gadget, idx) => (
                     <GadgetCard key={idx} Gadget={Gadget} />
                 ))}
@@ -22,3 +22,4 @@ const GadgetCards = ({ Gadgets }) => {
 };
 
 export default GadgetCards;
+//  grid grid-cols-3 max-lg:grid-cols-3 max-sm:grid-cols-1 gap-5 max-lg:col-span-9 max-md:col-span-8 max-sm:col-span-7
