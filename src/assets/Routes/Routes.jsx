@@ -12,7 +12,7 @@ const router = createBrowserRouter([
         errorElement: <Error></Error>,
         children: [
             {
-                path: "/",
+                path: "",
                 element:<Home title="Home Page"></Home>,
                 loader: () => fetch('Gadget.json'),
             },

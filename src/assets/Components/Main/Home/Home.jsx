@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import Banner from "../../Banner/Banner";
 import { useLoaderData } from "react-router-dom";
 import GadgetCards from "./GadgetCards/GadgetCards";
-import Details from "./Details/Details";
 const Home = ({ title }) => {
     useEffect(() => {
         document.title = title;

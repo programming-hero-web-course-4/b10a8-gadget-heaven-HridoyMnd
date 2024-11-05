@@ -2,19 +2,38 @@ import { useContext } from "react";
 import { myContext } from "../../../../../App";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
+
 const Cart = () => {
-    const {cart} = useContext(myContext)
+    //modal part
+    const {isModalOpen} = useContext(myContext);
+    const {closeModal}  = useContext(myContext)
+    const { cart } = useContext(myContext)
+    const {totalPrice} = useContext(myContext)
+    const {handleGoToHome} = useContext(myContext)
+    //handle sort
+    const { handleSort } = useContext(myContext)
     return (
         <div className="container mx-auto p-5">
             <div className="flex justify-between items-center">
                 <h2 className="text-3xl font-bold">Cart</h2>
                 <div>
-                    <h3 className="text-xl font-bold inline-block">Total Cost:</h3>
-                    <button className="border border-purple-700 px-8 py-2 rounded-full text-xl font-semibold ml-3">Sort By Price</button>
-                    <button className="border border-purple-700 px-8 py-2 rounded-full text-xl font-semibold ml-3 bg-purple-600 text-white">Purchase</button>
+                    <h3 className="text-xl font-bold inline-block">Total Cost: $  {totalPrice}</h3>
+                    <button onClick={() => handleSort()} className="border border-purple-700 px-8 py-2 rounded-full text-xl font-semibold ml-3">Sort By Price</button>
+                    <button onClick={() => handleGoToHome()} className="border border-purple-700 px-8 py-2 rounded-full text-xl font-semibold ml-3 bg-purple-600 text-white">Purchase</button>
                 </div>
             </div>
-            <div className=" pb-32">
+            <div className=" pb-8">
+            {isModalOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+                    <div className="bg-white p-5 rounded shadow-lg w-1/3">
+                        <h2 className="text-xl font-bold mb-4">Modal Title</h2>
+                        <p>This is the modal content.</p>
+                        <button onClick={closeModal} className="mt-4 bg-blue-500 text-white px-4 py-2 rounded">
+                            Close Modal
+                        </button>
+                    </div>
+                </div>
+            )}
                 {
                     cart.map((item, idx) =>
                         <div key={idx} className="bg-gray-100 flex p-3 rounded-lg my-6 justify-between items-center">

@@ -3,12 +3,13 @@ import { myContext } from "../../../../../App";
 import { RiDeleteBin6Line } from "react-icons/ri";
 
 const WishList = () => {
+
     //receive wishList
     const {wishList} = useContext(myContext)
     return (
         <div className="container mx-auto p-5">
             <h2 className="text-3xl font-bold mb-2">Wishlist</h2>
-            <div className=" pb-32">
+            <div className=" pb-8">
                 {
                     wishList.map((item, idx) =>
                         <div key={idx} className="bg-gray-100 flex p-3 rounded-lg my-6 justify-between items-center">
