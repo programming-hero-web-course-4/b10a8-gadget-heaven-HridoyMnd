@@ -56,7 +56,11 @@ function App() {
       alert("Already  Exist")
     }
   };
-
+  //handle remove wish
+  const handleRemoveWish = (removewish) => {
+    const remainWish = wishList.filter(item => item.id !== removewish.id)
+    setWishList(remainWish)
+  }
   //modal part
   const [isModalOpen, setIsModalOpen] = useState(false);
   const closeModal = () => {
@@ -64,6 +68,7 @@ function App() {
     navigate("/");
     setTotalPrice(0)
     setCart([])
+    setWishList([])
   };
   
   //go to root path
@@ -89,7 +94,8 @@ function App() {
       {{
         isModalOpen, closeModal, totalPrice, handleGoToHome,
          handleDetails, details, handleAddCart, cart, handleWishList,
-         wishList, isClicked,  handleSort, handleRemove, purchased, handleRemovePurchased
+         wishList, isClicked,  handleSort, handleRemove, purchased, 
+         handleRemovePurchased, handleRemoveWish
       }}>
         <Navbar></Navbar>
         <Outlet></Outlet>
