@@ -20,7 +20,7 @@ const Purchased = ({ title }) => {
         <div className="container mx-auto">
             <div className="text-center bg-purple-500 text-white p-3 rounded-lg">
                 <h1 className="text-3xl font-bold">Purchased Product</h1>
-                <p className="mt-3 text-slate-100 mt-3 w-[60%] mx-auto">A smart gadget purchase involves buying advanced electronic devices designed to simplify and enhance daily tasks through automation, connectivity, and intelligent features</p>
+                <p className="mt-3 text-slate-100 w-[60%] mx-auto">A smart gadget purchase involves buying advanced electronic devices designed to simplify and enhance daily tasks through automation, connectivity, and intelligent features</p>
                 <button onClick={gotoShop} className="text-xl font-bold bg-slate-100 text-purple-600 mt-5 mb-2 px-8 py-2 border border-white rounded-lg">Buy More</button>
             </div>
             <div className="pb-32 my-10">

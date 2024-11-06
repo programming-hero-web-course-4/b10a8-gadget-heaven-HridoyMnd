@@ -38,7 +38,7 @@ const Navbar = () => {
                 <div className="flex gap-4 items-center">
                     <div className="relative">
                     <FaBarsStaggered onClick={toggleNavbar} className={`cursor-pointer hidden max-md:flex text-2xl ${isRoot ? 'text-white' : 'text-gray-800'}`} />
-                        <ul className={`absolute right-10 bg-gray-600 flex-col max-md:flex ${isOpen ? 'flex' : 'hidden'} text-white`}>
+                        <ul className={`absolute right-10 bg-gray-600 flex-col max-md:flex hidden ${isOpen ? 'flex' : 'hidden'} text-white`}>
                         <Link onClick={() => { goHome(); toggleNavbar(); }} to="/" className="px-5 py-2 font-medium">Home</Link>
                         <Link onClick={() => { setPath(1); toggleNavbar(); }} to="statistics" className={`${path === 1 ? 'text-purple-600' : ''} px-5 py-2 font-medium`}>Statistics</Link>
                         <Link onClick={() => { setPath(2); toggleNavbar(); }} to="dashboard" className={`${path === 2 ? 'text-purple-600' : ''} px-5 py-2 font-medium`}>Dashboard</Link>
