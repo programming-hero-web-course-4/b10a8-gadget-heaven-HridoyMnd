@@ -1,148 +1,152 @@
-import { Outlet } from "react-router-dom"
-import Footer from "./assets/Components/Footer/Footer"
-import Navbar from "./assets/Components/Navbar/Navbar"
-import { createContext, useState } from "react"
+import { Outlet } from "react-router-dom";
+import Footer from "./assets/Components/Footer/Footer";
+import Navbar from "./assets/Components/Navbar/Navbar";
+import { createContext, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-//context api create
-export const myContext = createContext("data")
+import { useLoaderData } from "react-router-dom";
+
+export const myContext = createContext("data");
 
 function App() {
-  //toastify
-  const NotpurchaseToast = () =>
-    toast.warn("You didn't add any product on cart", {
-      position: "top-right"
-    });
-    //add cart toast
-  const AddCartToast = () =>
-    toast.success("You have added this product on cart", {
-      position: "top-center"
-    });
-    ///wisht toast
-  const AddwishToast = () =>
-    toast.success("You have added this product on wish", {
-      position: "top-center"
-    });
-    // already exist
-  const AlreadyExistCart = () =>
-    toast.error("This product already exist", {
-      position: "top-left"
-    });
-  //disable
+  const navigate = useNavigate();
+
+  // Toast functions
+  const NotpurchaseToast = () => toast.warn("You didn't add any product on cart", { position: "top-right" });
+  const AddCartToast = () => toast.success("You have added this product on cart", { position: "top-center" });
+  const AddwishToast = () => toast.success("You have added this product on wish", { position: "top-center" });
+  const AlreadyExistCart = () => toast.error("This product already exists", { position: "top-left" });
+
+  // Local states with persistence
   const [isClicked, setIsClicked] = useState(false);
-  //set price 
-  const [totalPrice, setTotalPrice] = useState(0);
-  //handle addCacrt
-  const [cart, setCart] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(() => {
+    const savedPrice = localStorage.getItem("totalPrice");
+    return savedPrice ? JSON.parse(savedPrice) : 0;
+});
+useEffect(() => {
+  localStorage.setItem("totalPrice", JSON.stringify(totalPrice));
+}, [totalPrice]);
+  
+  // Cart state with persistence
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem("cart");
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
+  
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   const handleAddCart = (newCart) => {
     const isExist = cart.find(prevCart => prevCart.id === newCart.id);
     if (!isExist) {
       setTotalPrice(prevPrice => prevPrice + newCart.price);
       setCart([...cart, newCart]);
-      AddCartToast()
-    }
-    else {
-      AlreadyExistCart()
+      AddCartToast();
+    } else {
+      AlreadyExistCart();
     }
   };
 
-  //handle sort cart
   const handleSort = () => {
     const sortedCart = [...cart].sort((a, b) => b.price - a.price);
     setCart(sortedCart);
   };
 
-  //remove cart
   const handleRemove = (remove) => {
-    const remainingCart = cart.filter(item => item.id !== remove.id)
+    const remainingCart = cart.filter(item => item.id !== remove.id);
     setTotalPrice(prevPrice => prevPrice - remove.price);
-    setCart(remainingCart)
+    setCart(remainingCart);
   };
 
-  //purchased cart 
-  const [purchased, setPurchased] = useState([])
+  // Purchased state with persistence
+  const [purchased, setPurchased] = useState(() => {
+    const savedPurchased = localStorage.getItem("purchased");
+    return savedPurchased ? JSON.parse(savedPurchased) : [];
+  });
+  
+  useEffect(() => {
+    localStorage.setItem("purchased", JSON.stringify(purchased));
+  }, [purchased]);
+
   const handleRemovePurchased = (del) => {
-    const remain = purchased.filter(due => due.id !== del.id)
-    setPurchased(remain)
+    const remain = purchased.filter(due => due.id !== del.id);
+    setPurchased(remain);
   };
 
-  // handle AddwishList
-  const [wishList, setWishList] = useState([]);
+  // WishList state with persistence
+  const [wishList, setWishList] = useState(() => {
+    const savedWishList = localStorage.getItem("wishList");
+    return savedWishList ? JSON.parse(savedWishList) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("wishList", JSON.stringify(wishList));
+  }, [wishList]);
+
   const handleWishList = (newWish) => {
-    const isExist = wishList.find(prevWish => prevWish.id === newWish.id)
+    const isExist = wishList.find(prevWish => prevWish.id === newWish.id);
     if (!isExist) {
-      setWishList([...wishList, newWish])
-      setIsClicked(true)
-      AddwishToast()
-    }
-    else {
-      AlreadyExistCart()
+      setWishList([...wishList, newWish]);
+      setIsClicked(true);
+      AddwishToast();
+    } else {
+      AlreadyExistCart();
     }
   };
-  //handle remove wish
+
   const handleRemoveWish = (removewish) => {
-    const remainWish = wishList.filter(item => item.id !== removewish.id)
-    setWishList(remainWish)
-  }
-  //modal part
+    const remainWish = wishList.filter(item => item.id !== removewish.id);
+    setWishList(remainWish);
+  };
+
+  // Modal functionality
   const [isModalOpen, setIsModalOpen] = useState(false);
   const closeModal = () => {
     setIsModalOpen(false);
     navigate("/");
-    setTotalPrice(0)
-    setCart([])
-    setWishList([])
+    setTotalPrice(0);
+    setCart([]);
+    setWishList([]);
   };
-  
-  //go to root path
-  const navigate = useNavigate()
-  const handleGoToHome = () => {
-    if(cart.length === 0) {
 
-      NotpurchaseToast()
-    }
-    else{
+  const handleGoToHome = () => {
+    if (cart.length === 0) {
+      NotpurchaseToast();
+    } else {
       setIsModalOpen(true);
       setPurchased((prevPurchased) => [...prevPurchased, ...cart]);
     }
   };
 
-  //handle details
-  const [details, setDetails] = useState([])
+  // Details handling
+  const [details, setDetails] = useState([]);
   const handleDetails = (newData, info) => {
     setDetails(newData);
-    setDisplay(info)
-    const isExist = wishList.find(prevWish => prevWish.id === newData.id)
+    const isExist = wishList.find(prevWish => prevWish.id === newData.id);
     if (!isExist) {
-      setIsClicked(false)
+      setIsClicked(false);
     }
   };
-    //handle details
+  //all data
+  const Gadgets = useLoaderData();
 
-    const [display, setDisplay] = useState(false)
-    //go home 
-    const goHome = () => {
-      setDisplay(false)
-      setPath(0)
-    }
   return (
     <>
-      <myContext.Provider value =
-      {{
+      <myContext.Provider value={{
         isModalOpen, closeModal, totalPrice, handleGoToHome,
-         handleDetails, details, handleAddCart, cart, handleWishList,
-         wishList, isClicked,  handleSort, handleRemove, purchased, 
-         handleRemovePurchased, handleRemoveWish , display, goHome
+        handleDetails, details, handleAddCart, cart, handleWishList,
+        wishList, isClicked, handleSort, handleRemove, purchased,
+        handleRemovePurchased, handleRemoveWish, Gadgets
       }}>
-        <Navbar></Navbar>
-        <ToastContainer></ToastContainer>
-        <Outlet></Outlet>
-        <Footer></Footer>
+        <Navbar />
+        <ToastContainer />
+        <Outlet />
+        <Footer />
       </myContext.Provider>
-
     </>
-  )
+  );
 }
 
-export default App ;
+export default App;

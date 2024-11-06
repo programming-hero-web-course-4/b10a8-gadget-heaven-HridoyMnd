@@ -11,7 +11,7 @@ const Navbar = () => {
     const { wishList } = useContext(myContext)
     const location = useLocation()
     const isRoot = location.pathname === "/";
-    const { goHome } = useContext(myContext)
+    // const { goHome } = useContext(myContext)
     const [path, setPath] = useState(0)
     //navbar
     const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ const Navbar = () => {
                 {/* nav menu part */}
                 <div className="max-md:hidden">
                     <ul className="flex gap-2">
-                        <Link onClick={() => goHome()} to="/" className={`px-5 py-2 font-medium ${isRoot ? "text-white" : ""}`}>Home</Link>
+                        <Link onClick={() => setPath(0)} to="/" className={`px-5 py-2 font-medium ${isRoot ? "text-white" : ""}`}>Home</Link>
                         <Link onClick={() => setPath(1)} to="statistics" className={`${path === 1 ? 'text-purple-600' : ''} px-5 py-2 font-medium ${isRoot ? "text-white" : ""}`}>Statistics</Link>
                         <Link onClick={() => setPath(2)} to="dashboard" className={`${path === 2 ? 'text-purple-600' : ''} px-5 py-2 font-medium ${isRoot ? "text-white" : ""}`}>Dashboard</Link>
                         <Link onClick={() => setPath(3)} to="purchased" className={`${path === 3 ? 'text-purple-600' : ''} px-5 py-2 font-medium ${isRoot ? "text-white" : ""}`}>Purchased</Link>

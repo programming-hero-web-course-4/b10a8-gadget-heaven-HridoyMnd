@@ -1,9 +1,12 @@
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import GadgetCard from "../GadgetCard/GadgetCard";
 import Sidebar from "../Sidebar/Sidebar";
+import { myContext } from '../../../../../App';
 
-const GadgetCards = ({ Gadgets }) => {
+const GadgetCards = () => {
+    const {Gadgets} = useContext(myContext)
+
     const [selectedCategory, setSelectedCategory] = useState(null);
     // Filtered gadgets based on selected category
     const filteredGadgets = selectedCategory 

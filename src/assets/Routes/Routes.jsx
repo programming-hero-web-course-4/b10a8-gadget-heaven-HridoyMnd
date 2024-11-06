@@ -8,16 +8,18 @@ import Statistics from "../Components/Main/Statistics/Statistics";
 import Purchased from "../Components/Main/Purchased/Purchased";
 // import GadgetCards from "../Components/Main/Home/GadgetCards/GadgetCards";
 import Dashboard from "../Components/Main/Dashboard/Dashboard";
+import Details from "../Components/Main/Home/Details/Details";
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App></App>,
         errorElement: <Error></Error>,
+        loader: () => fetch('Gadget.json'),
         children: [
             {
                 path: "/",
                 element:<Home title="Home Page"></Home>,
-                loader: () => fetch('Gadget.json'),
+                
             },
             {
                 path: "statistics",
@@ -30,6 +32,10 @@ const router = createBrowserRouter([
             {
                 path:"purchased",
                 element:<Purchased title="Purchased Page"></Purchased>,
+            },
+            {
+                path:'details',
+                element:<Details></Details>
             }
 
         ]
