@@ -1,14 +1,12 @@
-
-// export default Sidebar;
 import { useEffect, useState } from "react";
 
 const Sidebar = ({ onCategorySelect }) => {
-    const [category, setCategory] = useState([]);
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         fetch('categorys.json')
             .then((res) => res.json())
-            .then((data) => setCategory(data));
+            .then((data) => setCategories(data));
     }, []);
 
     return (
@@ -18,8 +16,9 @@ const Sidebar = ({ onCategorySelect }) => {
                 onClick={() => onCategorySelect(null)}>
                 All
             </button>
-            {category.map((item, id) => (
-                <button key={id} 
+            {categories.map((item, id) => (
+                <button 
+                    key={id} // using category key for uniqueness
                     className="p-2 w-40 max-md:w-32 rounded-lg text-lg font-medium bg-slate-100"
                     onClick={() => onCategorySelect(item.category)}>
                     {item.category}
@@ -30,4 +29,3 @@ const Sidebar = ({ onCategorySelect }) => {
 };
 
 export default Sidebar;
-//     max-lg:col-span-3 max-md:col-span-4 max-sm:col-span-5 max-xl:col-span-3
