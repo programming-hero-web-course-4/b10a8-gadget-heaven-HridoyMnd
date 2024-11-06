@@ -3,10 +3,32 @@ import Footer from "./assets/Components/Footer/Footer"
 import Navbar from "./assets/Components/Navbar/Navbar"
 import { createContext, useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 //context api create
 export const myContext = createContext("data")
 
 function App() {
+  //toastify
+  const NotpurchaseToast = () =>
+    toast.warn("You didn't add any product on cart", {
+      position: "top-right"
+    });
+    //add cart toast
+  const AddCartToast = () =>
+    toast.success("You have added this product on cart", {
+      position: "top-center"
+    });
+    ///wisht toast
+  const AddwishToast = () =>
+    toast.success("You have added this product on wish", {
+      position: "top-center"
+    });
+    // already exist
+  const AlreadyExistCart = () =>
+    toast.error("This product already exist", {
+      position: "top-left"
+    });
   //disable
   const [isClicked, setIsClicked] = useState(false);
   //set price 
@@ -18,9 +40,10 @@ function App() {
     if (!isExist) {
       setTotalPrice(prevPrice => prevPrice + newCart.price);
       setCart([...cart, newCart]);
+      AddCartToast()
     }
     else {
-      alert("Already  Exist");
+      AlreadyExistCart()
     }
   };
 
@@ -51,9 +74,10 @@ function App() {
     if (!isExist) {
       setWishList([...wishList, newWish])
       setIsClicked(true)
+      AddwishToast()
     }
     else {
-      alert("Already  Exist")
+      AlreadyExistCart()
     }
   };
   //handle remove wish
@@ -74,8 +98,14 @@ function App() {
   //go to root path
   const navigate = useNavigate()
   const handleGoToHome = () => {
-    setIsModalOpen(true);
-    setPurchased((prevPurchased) => [...prevPurchased, ...cart]);
+    if(cart.length === 0) {
+
+      NotpurchaseToast()
+    }
+    else{
+      setIsModalOpen(true);
+      setPurchased((prevPurchased) => [...prevPurchased, ...cart]);
+    }
   };
 
   //handle details
@@ -98,6 +128,7 @@ function App() {
          handleRemovePurchased, handleRemoveWish
       }}>
         <Navbar></Navbar>
+        <ToastContainer></ToastContainer>
         <Outlet></Outlet>
         <Footer></Footer>
       </myContext.Provider>
