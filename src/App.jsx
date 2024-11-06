@@ -119,6 +119,10 @@ useEffect(() => {
       setPurchased((prevPurchased) => [...prevPurchased, ...cart]);
     }
   };
+  //set adctive page on dashboard
+  const [activeTab, setActiveTab] = useState(1);
+    // handleActive tab
+    // const [activeButton, setActiveButton] = useState('Available')
 
   // Details handling
   const [details, setDetails] = useState([]);
@@ -152,7 +156,8 @@ useEffect(() => {
         isModalOpen, closeModal, totalPrice, handleGoToHome,
         handleDetails, details, handleAddCart, cart, handleWishList,
         wishList, isClicked, handleSort, handleRemove, purchased,
-        handleRemovePurchased, handleRemoveWish, Gadgets, isFixed
+        handleRemovePurchased, handleRemoveWish, Gadgets, isFixed,
+         setActiveTab, activeTab
       }}>
         <Navbar />
         <ToastContainer />

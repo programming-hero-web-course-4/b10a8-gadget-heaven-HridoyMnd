@@ -6,7 +6,7 @@ const WishList = () => {
     const { wishList, handleRemoveWish } = useContext(myContext);
 
     return (
-        <div className="container mx-auto p-5">
+        <div id="wish" className="container mx-auto p-5">
             <h2 className="text-3xl font-bold mb-2">Wishlist</h2>
             <div className="flex flex-col gap-6 pb-8">
                 {wishList.map((item, idx) => (

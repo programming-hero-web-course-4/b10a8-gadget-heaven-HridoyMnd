@@ -10,7 +10,7 @@ const Cart = () => {
     } = useContext(myContext);
 
     return (
-        <div className="container mx-auto p-5">
+        <div id="cart" className="container mx-auto p-5">
             {/* Header */}
             <div className="flex justify-between items-center">
                 <h2 className="text-3xl font-bold max-md:text-2xl">Cart</h2>

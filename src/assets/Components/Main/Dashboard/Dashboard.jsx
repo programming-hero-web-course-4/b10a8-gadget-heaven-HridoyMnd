@@ -1,14 +1,16 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Cart from "./Cart/Cart";
 import WishList from "./WishList/WishList";
+import { myContext } from "../../../../App";
 
 const Dashboard = ({ title }) => {
     useEffect(() => {
         document.title = title;
     }, [title]);
 
-    const [activeTab, setActiveTab] = useState(1);
-
+    //handle activetab 
+    const {setActiveTab, activeTab} = useContext(myContext)
+    // const {activeButton} = useContext(myContext)
     return (
         <div>
             {/* Header Section */}
@@ -34,6 +36,8 @@ const Dashboard = ({ title }) => {
 
             {/* Render Selected Tab Content */}
             {activeTab === 1 ? <Cart /> : <WishList />}
+            {/* {activeButton === 'cart' && <Cart></Cart>} */}
+            {/* {activeButton === 'wish' && <WishList></WishList>} */}
         </div>
     );
 };

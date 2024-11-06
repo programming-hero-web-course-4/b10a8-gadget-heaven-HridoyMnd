@@ -18,6 +18,17 @@ const Navbar = () => {
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
+    //handle active tab
+    const navigate = useNavigate()
+    const gotoCart = () => {
+        navigate('dashboard#cart')
+        setPath(2)
+    }
+    const gotoWish = () => {
+        navigate('dashboard#wish')
+        setPath(2)
+    }
+    // const { setActiveButton} = useContext(myContext)
     return (
         <section className={`${isFixed ? 'fixed top-0 w-full backdrop-blur-md z-10' : ''} transition-all duration-300 ${isRoot ? 'bg-purple-500 ' : ''}`}>
             <nav className="flex justify-between items-center container mx-auto py-6">
@@ -45,8 +56,8 @@ const Navbar = () => {
                             <Link onClick={() => { setPath(3); toggleNavbar(); }} to="purchased" className={`${path === 3 ? 'text-purple-600' : ''} px-5 py-2 font-medium`}>Purchased</Link>
                         </ul>
                     </div>
-                    <button className="bg-white text-gray-600 relative border border-purple-700 h-10 w-10 rounded-full flex justify-center items-center"><LuShoppingCart className="" /><span className="text-purple-800 absolute -top-1 right-2">{cart.length}</span></button>
-                    <button className="bg-white text-gray-600 relative border border-purple-700 h-10 w-10 rounded-full flex justify-center items-center"><FaRegHeart className="" /><span className=" text-purple-800 absolute -top-1 right-2 ">{wishList.length}</span></button>
+                    <button onClick={gotoCart} className="bg-white text-gray-600 relative border border-purple-700 h-10 w-10 rounded-full flex justify-center items-center"><LuShoppingCart className="" /><span className="text-purple-800 absolute -top-1 right-2">{cart.length}</span></button>
+                    <button onClick={gotoWish}  className="bg-white text-gray-600 relative border border-purple-700 h-10 w-10 rounded-full flex justify-center items-center"><FaRegHeart className="" /><span className=" text-purple-800 absolute -top-1 right-2 ">{wishList.length}</span></button>
                 </div>
             </nav>
         </section>
