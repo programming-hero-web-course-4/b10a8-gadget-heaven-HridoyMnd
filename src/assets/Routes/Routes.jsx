@@ -4,9 +4,9 @@ import Error from "../Components/Error/Error";
 import Home from "../Components/Main/Home/Home";
 import Statistics from "../Components/Main/Statistics/Statistics";
 // import Dashboard from "../Components/Main/Dashboard/Dashboard";
-import Details from "../Components/Main/Home/Details/Details";
+// import Details from "../Components/Main/Home/Details/Details";
 import Purchased from "../Components/Main/Purchased/Purchased";
-import GadgetCards from "../Components/Main/Home/GadgetCards/GadgetCards";
+// import GadgetCards from "../Components/Main/Home/GadgetCards/GadgetCards";
 import Dashboard from "../Components/Main/Dashboard/Dashboard";
 const router = createBrowserRouter([
     {
@@ -15,13 +15,9 @@ const router = createBrowserRouter([
         errorElement: <Error></Error>,
         children: [
             {
-                path: "",
+                path: "/",
                 element:<Home title="Home Page"></Home>,
                 loader: () => fetch('Gadget.json'),
-            },
-            {
-                path:'details',
-                element: <Details></Details>
             },
             {
                 path: "statistics",

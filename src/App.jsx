@@ -110,14 +110,22 @@ function App() {
 
   //handle details
   const [details, setDetails] = useState([])
-  const handleDetails = (newData) => {
+  const handleDetails = (newData, info) => {
     setDetails(newData);
+    setDisplay(info)
     const isExist = wishList.find(prevWish => prevWish.id === newData.id)
     if (!isExist) {
       setIsClicked(false)
     }
   };
+    //handle details
 
+    const [display, setDisplay] = useState(false)
+    //go home 
+    const goHome = () => {
+      setDisplay(false)
+      setPath(0)
+    }
   return (
     <>
       <myContext.Provider value =
@@ -125,7 +133,7 @@ function App() {
         isModalOpen, closeModal, totalPrice, handleGoToHome,
          handleDetails, details, handleAddCart, cart, handleWishList,
          wishList, isClicked,  handleSort, handleRemove, purchased, 
-         handleRemovePurchased, handleRemoveWish
+         handleRemovePurchased, handleRemoveWish , display, goHome
       }}>
         <Navbar></Navbar>
         <ToastContainer></ToastContainer>
