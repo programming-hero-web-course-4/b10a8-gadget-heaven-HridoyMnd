@@ -14,12 +14,14 @@ const Navbar = () => {
     // const { goHome } = useContext(myContext)
     const [path, setPath] = useState(0)
     //navbar
+    const {isFixed} = useContext(myContext)
     const [isOpen, setIsOpen] = useState(false);
     const toggleNavbar = () => {
         setIsOpen(!isOpen);
     };
     return (
-        <section className={`${isRoot ? 'bg-purple-500 ' : ''}`}>
+        // {`${isFixed ? 'fixed top-0 w-full backdrop-blur-md z-10' : ''} transition-all duration-300`}
+        <section className={`${isFixed ? 'fixed top-0 w-full backdrop-blur-md z-10' : ''} transition-all duration-300 ${isRoot ? 'bg-purple-500 ' : ''}`}>
             <nav className="flex justify-between items-center container mx-auto py-6">
                 {/* nav logo part */}
                 <div>

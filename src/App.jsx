@@ -131,6 +131,20 @@ useEffect(() => {
   };
   //all data
   const Gadgets = useLoaderData();
+  //window scroll
+  const [isFixed, setIsFixed] = useState(false)
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <>
@@ -138,7 +152,7 @@ useEffect(() => {
         isModalOpen, closeModal, totalPrice, handleGoToHome,
         handleDetails, details, handleAddCart, cart, handleWishList,
         wishList, isClicked, handleSort, handleRemove, purchased,
-        handleRemovePurchased, handleRemoveWish, Gadgets
+        handleRemovePurchased, handleRemoveWish, Gadgets, isFixed
       }}>
         <Navbar />
         <ToastContainer />
