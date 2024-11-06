@@ -1,8 +1,20 @@
-# React + Vite
+## Live Link
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### https://gadget-heaven-assigment-8.surge.sh/
 
-Currently, two official plugins are available:
+## Ruquarement pdf link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ ### https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf
+
+ ### React key Features
+   * #### Context API
+   * #### Props
+   * #### UseState
+   * #### UseEffect
+   * #### Component
+   * #### JSX 
+   * #### React Router
+
+### Used Context API
+
+### Five features of the Webpage
