@@ -18,3 +18,8 @@
 ### Used Context API
 
 ### Five features of the Webpage
+   * #### Responsive Page
+   * #### Sort by Price
+   * #### Show details on card
+   * #### Multiple select alert
+   * #### Purchased History
