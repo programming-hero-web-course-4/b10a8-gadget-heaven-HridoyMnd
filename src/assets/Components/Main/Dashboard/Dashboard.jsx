@@ -3,11 +3,11 @@ import { useEffect, useState } from "react";
 import Cart from "./Cart/Cart";
 import WishList from "./WishList/WishList";
 
-const Dashboard = ({ title }) => {
+const Dashboard = ({title}) => {
     useEffect(() => {
         document.title = title;
     }, [title])
-    //cart and wishlist button state
+    // cart and wishlist button state
     const [active, setActive] = useState(1)
     return (
         <div>

@@ -23,6 +23,7 @@ const Navbar = () => {
                         <Link to="/" className={`px-5 py-2 font-medium text-gray-600${isRoot?"text-white":""}`}>Home</Link>
                         <Link to="statistics" className={`px-5 py-2 font-medium text-gray-600${isRoot?"text-white":""}`}>Statistics</Link>
                         <Link to="dashboard" className={`px-5 py-2 font-medium text-gray-600${isRoot?"text-white":""}`}>Dashboard</Link>
+                        <Link to="purchased" className={`px-5 py-2 font-medium text-gray-600${isRoot?"text-white":""}`}>Purchased</Link>
                     </ul>
                 </div>
                 {/* nav button part */}

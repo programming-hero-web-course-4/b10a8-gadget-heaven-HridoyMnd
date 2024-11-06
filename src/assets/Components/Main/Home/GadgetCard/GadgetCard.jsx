@@ -4,9 +4,9 @@ import { myContext } from "../../../../../App";
 const GadgetCard = ({ Gadget }) => {
 
 
-    const {updateData} = useContext(myContext)
+    const {handleDetails} = useContext(myContext)
     const handleClick = (data) => {
-        updateData(data);
+        handleDetails(data);
       };
     
     return (

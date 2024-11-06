@@ -1,4 +1,5 @@
 import banner from '../../Images/banner.jpg';
+
 const Banner = () => {
     return (
         <div className="mx-auto mb-[360px] bg-purple-500 text-white">

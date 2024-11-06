@@ -12,6 +12,8 @@ const Cart = () => {
     const {handleGoToHome} = useContext(myContext)
     //handle sort
     const { handleSort } = useContext(myContext)
+    //handle Remove
+    const {handleRemove} = useContext(myContext)
     return (
         <div className="container mx-auto p-5">
             <div className="flex justify-between items-center">
@@ -45,7 +47,7 @@ const Cart = () => {
                                     <h3 className="font-semibold text-xl">Price: ${item.price}</h3>
                                 </div>
                             </div>
-                            <button className="font-bold text-xl items-center justify-center flex gap-2 w-32 border border-purple-600 py-2 rounded-lg"><span>Remove</span><RiDeleteBin6Line /></button>
+                            <button onClick={() => handleRemove(item)} className="font-bold text-xl items-center justify-center flex gap-2 w-32 border border-purple-600 py-2 rounded-lg"><span>Remove</span><RiDeleteBin6Line /></button>
 
                         </div>
                     )

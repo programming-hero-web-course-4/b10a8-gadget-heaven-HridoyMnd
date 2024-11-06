@@ -10,7 +10,7 @@ const GadgetCards = ({ Gadgets }) => {
         ? Gadgets.filter(gadget => gadget.category === selectedCategory)
         : Gadgets.slice(0, 8);;
     return (
-        <div className="container mx-auto gap-4 grid grid-cols-12">
+        <div id='cardContainer' className="container mx-auto gap-4 grid grid-cols-12">
             <Sidebar onCategorySelect={setSelectedCategory} />
             <div className=" col-span-10 grid grid-cols-3 max-sm:grid-cols-1 max-sm:col-span-7 max-lg:grid-cols-2 max-lg:col-span-9 gap-5">
                 {filteredGadgets.map((Gadget, idx) => (
